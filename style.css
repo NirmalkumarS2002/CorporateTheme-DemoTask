@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 30px;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(10px);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+
+}
+
+.nav-menu a:hover {
+    color: green;
+}
+
+.header button {
+    font-size: 18px;
+    padding: 10px 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background: green;
+    color: white;
+}
+
+.header img {
+    width: 210px;
+}
+
+
+.hero {
+    height: 110vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.144)), url("./src/Flip\ image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 10px 300px;
+}
+
+
+.hero-content {
+    max-width: 530px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-content h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.hero-content h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.hero-content button {
+    font-size: 18px;
+    padding: 10px 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background: green;
+    color: white;
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.menu-toggle-container {
+    display: none;
+}
+
+
+.imfo div {
+    height: 100vh;
+    background: red;
+}
+
+
+@media (max-width: 1100px) {
+
+    /* Navigation */
+
+    .header {
+        display: grid;
+        padding: 0px 0px;
+        height: auto;
+        grid-template-columns: 1fr auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header>a,
+    .menu-toggle-container {
+        padding: 10px 20px;
+    }
+
+    .header img {
+        width: clamp(170px, 19vw, 210px);
+    }
+
+    .nav-menu {
+        display: none;
+        order: 2;
+        background: red;
+        padding: 20px;
+        height: 80vh;
+        padding-top: 50px;
+    
+    }
+
+    .nav-menu a{
+           font-size: clamp(15px, 1.7vw, 18px);
+    }
+
+    .navbutton {
+        display: none;
+        font-size: clamp(15px, 1.7vw, 18px);
+        order: 2;
+    }
+
+    .menu-toggle {
+        order: 1;
+        font-size: clamp(18px, 2.1vw, 26px);
+    }
+
+    .menu-toggle-container {
+        display: block;
+    }
+
+
+    /* hero page */
+
+    .hero {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .hero-content {
+        max-width: 80%;
+
+    }
+
+    .hero-content h4 {
+        font-size: clamp(30px, 3.5vw, 40px);
+    }
+
+
+    .hero-content h1 {
+        font-size: clamp(40px, 6vw, 90px);
+    }
+
+    .hero-content p {
+        font-size: clamp(15px, 1.7vw, 20px);
+        text-align: center;
+    }
+
+    .hero-content button {
+        font-size: clamp(15px, 1.7vw, 18px);
+        padding: clamp(6px, 0.7vw, 10px) clamp(25px, 3.5vw, 50px);
+    }
+
+}
+
+
+@media (max-width:425px) {
+
+    .hero-content h4 {
+        font-size: clamp(20px, 2.5vw, 30px);
+    }
+
+
+    .hero-content h1 {
+        font-size: clamp(25px, 3vw, 40px);
+    }
+
+    .hero-content p {
+        font-size: clamp(13px, 1.4vw, 15px);
+        text-align: center;
+    }
+
+    .hero-content button {
+        font-size: clamp(13px, 1.4vw, 15px);
+    }
+
+}
+
+/* @media (max-width:750px) {
+    .hero-content h4{
+    font-size: clamp(30px, 3.5vw, 40px);
+}
+
+
+.hero-content h1{
+    font-size:  clamp(40px, 6vw, 90px);
+}
+
+.hero-content p{
+    font-size:  clamp(15px, 1.7vw, 20px);
+}
+} */
