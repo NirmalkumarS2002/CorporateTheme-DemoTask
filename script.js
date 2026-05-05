@@ -41,3 +41,5 @@ let observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => {
     observer.observe(el);
 });
+
+// 

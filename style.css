@@ -6,6 +6,10 @@
    
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -49,7 +53,7 @@
 .header img {
     width: 210px;
 }
-
+/* hero page */
 
 .hero {
     height: 110vh;
@@ -70,17 +74,17 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .hero-content h4 {
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
 }
 
 
 .hero-content h1 {
-    font-size: 90px;
+    font-size: 75px;
     text-transform: uppercase;
     word-spacing: 5px;
 }
@@ -206,6 +210,9 @@
            width: 100%;
            text-align: center;
     }
+    .nav-menu a:hover{
+           color: black;
+    }
 
     .navbutton {
         display: none;
@@ -267,7 +274,7 @@
     }
 
     .hero-content h4 {
-        font-size: clamp(30px, 3.5vw, 40px);
+        font-size: clamp(30px, 3.5vw, 35px);
     }
 
 
@@ -372,7 +379,7 @@
 
 .marquee-section{
     width:100%;
-    height: 24vh;
+    height: 5%;
     padding:40px;
     background:#f8fafc;
     overflow:hidden;
@@ -526,7 +533,7 @@
     gap: 15px;
     padding: 25px;
     border-radius: 10px;
-    background: white;
+    background: #F8FAFC;
     border: 1px solid rgba(128, 128, 128, 0.2);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: 0.3s ease;
@@ -723,7 +730,7 @@
 
 .transorm-section{
     text-align: center;
-    background: #F9FAFB;
+    background: #ffffff;
     padding: 50px 30px;
     display: flex;
     justify-content: center;
@@ -751,8 +758,15 @@
     border-radius: 20px;
     text-decoration: none;
     color: black;
+    background: #f8fafcc5;
     font-size: clamp(15px, 1.7vw, 18px);
      border: 2px solid rgba(0, 128, 0, 0.2);
+     transition: 1s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow:  2px 4px 15px rgba(0, 128, 0, 0.2);
 }
 
 @media (max-width:700px) {
@@ -775,10 +789,16 @@
     
 }  
 
-
 .transorm-section p{
     font-size: clamp(12px, 1.2vw, 15px);
     line-height: 2;
+}
+
+
+.btn{
+    padding: 5px 20px;
+    font-size: clamp(13px, 1.4vw, 15px);
+
 }
 }
 
@@ -967,8 +987,7 @@
 
     .footer-container{
     grid-template-columns: 300px;
-    /* justify-content: center;
-    text-align: center; */
+
    
     
 }

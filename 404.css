@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     background: linear-gradient(-360deg, #000000e1, #4ba25269), url("./src/errorimg.webp");
     background-repeat: no-repeat;
