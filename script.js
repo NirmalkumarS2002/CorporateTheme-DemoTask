@@ -1,3 +1,5 @@
+// menu toggle
+
 let doggle=document.querySelector(".menu-toggle");
     
     let visible=false;
@@ -21,7 +23,6 @@ doggle.addEventListener("click",()=>{
     visible=true;
     }
 })
-
 
 // scroll animation
 
