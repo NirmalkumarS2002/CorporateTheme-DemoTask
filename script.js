@@ -49,4 +49,54 @@ reveals.forEach(el => {
     observer.observe(el);
 });
 
-// 
+// form page
+
+
+const submit = document.querySelector("#sub-btn");
+
+
+submit.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    const nameInput = document.querySelector("#name").value.trim();
+    const companyInput = document.querySelector("#company").value.trim();
+    const emailInput = document.querySelector("#email").value.trim();
+    const subjectInput = document.querySelector("#subject").value;
+    const messageInput = document.querySelector("#message").value.trim();
+
+    if (nameInput === "") {
+        alert("Please Enter Your Name")
+        return;
+    }
+
+    if (companyInput === "") {
+        alert("Please Enter Your Name")
+        return;
+    }
+
+    if (emailInput === "") {
+        alert("Please Enter Your Email")
+        return;
+    }
+
+    if (subjectInput === "") {
+        alert("Please Select Subject")
+        return;
+    }
+
+    if (messageInput === "") {
+        alert("Please Enter Your Message")
+        return;
+    }
+
+
+    alert("Submitted Successfully!");
+
+    document.querySelector("#name").value = "";
+    document.querySelector("#company").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#subject").selectedIndex = 0;
+    document.querySelector("#message").value = "";
+
+});
