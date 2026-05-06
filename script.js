@@ -1,28 +1,35 @@
 // menu toggle
 
-let doggle=document.querySelector(".menu-toggle");
+// let doggle=document.querySelector(".menu-toggle");
     
-    let visible=false;
+//     let visible=false;
 
-doggle.addEventListener("click",()=>{
+// doggle.addEventListener("click",()=>{
 
-    let nav=document.querySelector(".nav-menu");
-    let navbutton=document.querySelector(".navbutton");
+//     let nav=document.querySelector(".nav-menu");
+//     let navbutton=document.querySelector(".navbutton");
 
 
-    if(visible){
-        nav.style.display="none";
-         navbutton.style.display="none";
-         visible=false;
-    }
+//     if(visible){
+//         nav.style.display="none";
+//          navbutton.style.display="none";
+//          visible=false;
+//     }
 
-    else{
-    nav.style.display="flex";
-    nav.style.flexDirection="column";
-     navbutton.style.display="block";
-    visible=true;
-    }
-})
+//     else{
+//     nav.style.display="flex";
+//     nav.style.flexDirection="column";
+//      navbutton.style.display="block";
+//     visible=true;
+//     }
+// })
+
+let toggle = document.querySelector(".menu-toggle");
+let navMenu = document.querySelector(".nav-menu");
+
+toggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+});
 
 // scroll animation
 
