@@ -900,6 +900,11 @@ button:hover{
     background:#23d81d;
 }
 
+
+#sub-btn:hover{
+    background:#23d81d;
+}
+
 /* Mobile */
 @media(max-width:768px){
 
@@ -923,7 +928,7 @@ input,select,textarea{
     font-size: clamp(12px,1.3vw,14px);
 }
 
-#sub-btn{
+button{
     width:100%;
     font-size: clamp(13px,1.4vw,15px);
 }

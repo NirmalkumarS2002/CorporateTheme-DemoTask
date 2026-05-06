@@ -53,8 +53,7 @@ body{
 
 .page-not-found button:hover{
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.479);
-       background: rgb(41, 156, 41);
-        color: rgb(0, 0, 0);
+       background:#23d81d;
 }
 
 
