@@ -362,7 +362,7 @@ html,body {
 @media (max-width:425px) {
 
     .hero-content h4 {
-        font-size: clamp(20px, 2.5vw, 30px);
+        font-size: clamp(17px, 2.5vw, 30px);
     }
 
 
@@ -576,6 +576,8 @@ html,body {
     gap: 30px;
     margin-top: 40px;
     overflow: hidden;
+    /* background-color: red; */
+    padding: 20px;
 }
 
 
@@ -588,7 +590,7 @@ html,body {
     border-radius: 10px;
     background: #F8FAFC;
     border: 1px solid rgba(128, 128, 128, 0.2);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
     transition: 0.3s ease;
 }
 
@@ -625,8 +627,8 @@ html,body {
 
 
 .box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
 }
 
 /*  animation  */
@@ -876,6 +878,7 @@ small{
     justify-content: center;
     align-items: center;
     color:#6b7280;
+    gap: 2px;
     font-size: clamp(15px,1.6vw,17px);
 }
 
@@ -885,7 +888,7 @@ small{
     font-size: clamp(15px,1.6vw,17px);
 }
 
-#sub-btn{
+.form-submit-button{
     border:none;
     background:green;
     color:#fff;
@@ -901,7 +904,7 @@ button:hover{
 }
 
 
-#sub-btn:hover{
+.form-submit-button:hover{
     background:#23d81d;
 }
 
@@ -926,16 +929,21 @@ button:hover{
 
 input,select,textarea{
     font-size: clamp(12px,1.3vw,14px);
+      padding: 8px 20px;
 }
 
-button{
+.form-submit-button{
     width:100%;
+    padding: 8px 20px;
     font-size: clamp(13px,1.4vw,15px);
 }
 
 .bottom-bar{
     flex-direction:column;
     align-items:flex-start;
+}
+.bottom-bar p{
+    gap: 5px;
 }
 
 }
@@ -1015,6 +1023,8 @@ button{
         font-size: clamp(13px, 1.4vw, 15px);
 
     }
+
+    
 }
 
 

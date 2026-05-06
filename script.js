@@ -52,7 +52,7 @@ reveals.forEach(el => {
 // form page
 
 
-const submit = document.querySelector("#sub-btn");
+const submit = document.querySelector(".form-submit-button");
 
 
 submit.addEventListener("click", (e) => {
