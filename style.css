@@ -120,11 +120,16 @@ html,body {
 }
 
 .menu-toggle {
-    color: white;
+    color: green;
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+
+}
+
+.menu-toggle:hover{
+    color: white;
 
 }
 
