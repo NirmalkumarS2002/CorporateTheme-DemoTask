@@ -1106,6 +1106,12 @@ body {
     margin-bottom: 100px;
 }
 
+
+.blog-section a{
+    text-decoration: none;
+    color: black;
+
+}
 .blogContent {
     display: flex;
     flex-direction: column;
@@ -1191,10 +1197,15 @@ body {
 .subblog2 h6 {
     font-size: clamp(12px, 1.3vw, 14px);
     border: none;
-    padding: 5px 20px;
-    background-color: green;
+    /* padding: 5px 20px; */
     border-radius: 20px;
-    color: white;
+    color: black;
+}
+
+.subblog2 h6 span {
+    color: green;
+    font-size: 10px;
+    margin-right: 3px;
 }
 
 .subblog2 h3 {
@@ -1550,19 +1561,25 @@ small {
     color: #fff;
     padding-left: 6px;
 }
-
-.footilink {
+.icons{
     display: flex;
     gap: 25px;
 }
 
+
 .fsvg {
-    width: 24px;
-    height: 24px;
+    width: clamp(25px,2.7vw,30px);
+    height: clamp(25px,2.7vw,30px);
     color: rgb(173, 171, 171);
     cursor: pointer;
     transition: 0.3s;
 }
+
+.f1{
+    width: clamp(28px,3vw,34px);
+    height: clamp(28px,3vw,34px);
+}
+
 
 .icons svg:hover {
     transform: translateY(-4px);
