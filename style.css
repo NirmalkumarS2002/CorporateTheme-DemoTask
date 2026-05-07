@@ -278,7 +278,7 @@ body {
         }
 
         .home-text h1 {
-            font-size: clamp(25px, 3vw, 60px);
+            font-size: clamp(20px, 3vw, 60px);
             text-transform: uppercase;
             line-height: 1.4;
             margin-bottom: 20px;
