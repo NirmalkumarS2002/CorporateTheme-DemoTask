@@ -23,7 +23,7 @@ body {
     align-items: center;
     position: fixed;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.466);
     backdrop-filter: blur(10px);
 }
 
@@ -36,27 +36,29 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #2CD50E;
+    font-weight: bold;
     font-size: clamp(14px, 1.5vw, 16px);
 
 }
 
 .nav-menu a:hover {
-    color: green;
+    color: white;
 }
 
 .header button {
     font-size: clamp(14px, 1.5vw, 17px);
     padding: 10px 50px;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 10px;
     border: none;
-    background: green;
-    color: white;
+    background: #2CD50E;
+    color: black;
 }
 
 .header button:hover {
-    background: #23d81d;
+    background: green;
+    color: white;
 }
 
 .header img {
@@ -741,7 +743,6 @@ body {
     width: 100%;
     height: 5%;
     padding: 40px;
-    background: #f8fafc;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -758,11 +759,11 @@ body {
 }
 
 .marquee-header p {
-    font-size: clamp(15px, 1.7vw, 18px);
+    font-size: clamp(15px, 1.7vw, 28px);
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #334155;
+    color: green;
 }
 
 
@@ -787,12 +788,16 @@ body {
     align-items: center;
     gap: 10px;
     font-weight: 700;
-    color: #9ca3af;
+    color: black;
     white-space: nowrap;
     transition: 0.3s;
     cursor: pointer;
     overflow-y: hidden;
     font-size: clamp(19px, 2.4vw, 28px);
+}
+
+.marquee-item span{
+    color: green;
 }
 
 
@@ -805,16 +810,16 @@ body {
 }
 
 
-.marquee-item:hover span {
-    color: green;
+/* .marquee-item:hover span {
+    color: black;
     transform: scale(1.05);
 
 }
 
 .marquee-item:hover {
-    color: black;
+    color: green;
     transform: scale(1.05);
-}
+} */
 
 
 @keyframes scrollLeft {
@@ -846,6 +851,10 @@ body {
     padding: 60px 20px;
     text-align: center;
     gap: 20px;
+    color: white;
+    background: #072C0F;
+
+    
 }
 
 
@@ -857,7 +866,7 @@ body {
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 20px;
-    border: 2px solid rgba(0, 128, 0, 0.2);
+    border: 2px solid green;
 }
 
 .how-it-work p:first-of-type span {
@@ -870,13 +879,14 @@ body {
     max-width: 800px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
-    color: green;
+    color: white;
 }
 
 
 .how-it-work>p:nth-of-type(2) {
     font-size: clamp(14px, 2vw, 20px);
     max-width: 700px;
+    color: #bdbdbd;
 }
 
 
@@ -888,7 +898,6 @@ body {
     gap: 30px;
     margin-top: 40px;
     overflow: hidden;
-    /* background-color: red; */
     padding: 20px;
 }
 
@@ -904,6 +913,7 @@ body {
     border: 1px solid rgba(128, 128, 128, 0.2);
     /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
     transition: 0.3s ease;
+
 }
 
 
@@ -921,6 +931,7 @@ body {
 
 .key-boxes h3 {
     font-size: 20px;
+        color: rgb(0, 0, 0);
 }
 
 
@@ -928,6 +939,7 @@ body {
     font-size: 15px;
     text-align: center;
     line-height: 1.6;
+        color: rgb(0, 0, 0);
     border: none;
 }
 
@@ -939,8 +951,10 @@ body {
 
 
 .box:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+     transform: translateY(-6px) scale(1.01);
+     border: 2px solid rgb(5, 146, 52);
+    box-shadow: 0 10px 13px rgb(42, 102, 55), 0 0 20px rgba(0, 255, 0, 0.6);
+
 }
 
 /*  animation  */
@@ -984,7 +998,7 @@ body {
 .office-section {
     padding: 80px 40px;
     min-height: 70vh;
-    background: #F3F4F6;
+    background: #f5f5f5;
 }
 
 .office-heading {
@@ -995,7 +1009,7 @@ body {
 
 .office-heading p {
     font-size: clamp(15px, 1.6vw, 18px);
-    color: #64748b;
+    color: #000000;
     margin-bottom: 14px;
 }
 
@@ -1023,8 +1037,9 @@ body {
 }
 
 .office-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 10px 10px rgba(42, 102, 55, 0.336), 0 0 10px rgba(0, 255, 0, 0.6);
+
 }
 
 .office-card h2 {
@@ -1102,8 +1117,9 @@ body {
     align-items: center;
     gap: 40px;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #072C0F;
 }
 
 
@@ -1130,7 +1146,8 @@ body {
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 20px;
-    border: 2px solid rgba(0, 128, 0, 0.2);
+    color: white;
+    border: 2px solid rgb(0, 128, 0);
 }
 
 
@@ -1142,7 +1159,7 @@ body {
 
 .blogContent h1 {
     font-size: clamp(30px, 3.5vw, 55px);
-    color: green;
+    color: white;
 }
 
 .blogContent>p {
@@ -1150,7 +1167,7 @@ body {
     width: 100%;
     max-width: clamp(500px, 60vw, 750px);
     line-height: 1.5;
-    color: #64748b;
+    color: #bdbdbd;
     border-radius: 10px;
 }
 
@@ -1171,15 +1188,19 @@ body {
 }
 
 .blogs {
-    border: 1px solid rgba(128, 128, 128, 0.171);
+    border: 1px solid green;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
+    background: #F5F5F5;
 }
 
 .blogs:hover {
-    box-shadow: 2px 2px 10px gray;
-    transform: translateY(-12px);
+    /* box-shadow: 2px 2px 10px gray;
+    transform: translateY(-12px); */
+
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 50px rgb(42, 102, 55), 0 0 20px rgba(0, 255, 0, 0.6);
 
 }
 
@@ -1210,6 +1231,7 @@ body {
 
 .subblog2 h3 {
     font-size: clamp(20px, 2.3vw, 30px);
+    color: green;
 }
 
 .subblog2 .blog-p {
@@ -1251,7 +1273,7 @@ body {
 
 .contact-form-section {
     padding: 60px 20px;
-    background: #F3F4F6;
+    background: #F5F5F5;
 }
 
 .form-box {
@@ -1424,7 +1446,7 @@ small {
 
 .transorm-section {
     text-align: center;
-    background: #ffffff;
+    background: #F5F5F5;
     padding: 50px 30px;
     display: flex;
     justify-content: center;
@@ -1459,8 +1481,8 @@ small {
 }
 
 .btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 2px 4px 15px rgba(0, 128, 0, 0.2);
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 10px 10px rgba(42, 102, 55, 0.452), 0 0 0px rgba(0, 255, 0, 0.459);
 }
 
 @media (max-width:700px) {
