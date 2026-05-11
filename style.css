@@ -152,8 +152,8 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
-            padding: 80px 10%;
+            gap: 80px;
+            padding: 80px 15%;
             flex-wrap: wrap;
             background: linear-gradient(360deg, rgb(26, 18, 18), rgb(11, 59, 31));
             background-size: cover;
