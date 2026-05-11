@@ -247,10 +247,10 @@ body {
             text-transform: uppercase;
         }
 
-        .button1:hover {
+        /* .button1:hover {
             box-shadow: 0 0 18px rgba(0, 255, 0, 0.3);
             transform: translateY(-2px);
-        }
+        } */
 
         @keyframes badgePop {
             from { opacity: 0; transform: scale(0.8) translateY(-10px); }
