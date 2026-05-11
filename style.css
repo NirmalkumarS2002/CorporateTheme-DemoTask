@@ -871,6 +871,7 @@ body {
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 20px;
+    text-transform: uppercase;
     /* border: 2px solid green; */
 }
 
@@ -1152,6 +1153,7 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     color: white;
+    text-transform: uppercase;
     /* border: 2px solid rgb(0, 128, 0); */
 }
 
